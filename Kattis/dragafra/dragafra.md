@@ -6,6 +6,9 @@ The output is expected to be the number of windows still covered by curtains, so
 
 ## Psuedo Code
 ```
+INPUT n
+INPUT m
+
 PRINT n-m
 ```
 
