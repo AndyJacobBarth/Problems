@@ -1,4 +1,4 @@
-# [velkomin](https://open.kattis.com/problems/velkomin)
+# [Velkomin](https://open.kattis.com/problems/velkomin)
 
 This problem simply asks us to output `VELKOMIN!`
 
