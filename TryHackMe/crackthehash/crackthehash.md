@@ -48,7 +48,7 @@ Status...........: Cracked
 
 Result: <b>easy</b>  
 
-Note: If you ever want to see cracked hashes, hashcat saves a potfile with each one. You can specify the path using `hashcat -a <attack> -m <method> <hash> <wordlist> --potfile-path <path>`. The default location is /home/<User>/.local/share/hashcat/hashcat.potfile.
+Note: If you ever want to see cracked hashes, hashcat saves a potfile with each one. You can specify the path using `hashcat -a <attack> -m <method> <hash> <wordlist> --potfile-path <path>`. The default location is /home/User/.local/share/hashcat/hashcat.potfile.
 
 ### CBFDAC6008F9CAB4083784CBD1874F76618D2A97
 Round two baby. bring it.
