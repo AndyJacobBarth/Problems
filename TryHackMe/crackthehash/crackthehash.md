@@ -7,7 +7,8 @@ When we find the encryption algorithm used, we will turn to a rainbow table atta
 In theory, there can be a match even if the password we're using isn't the original, called a collision. Collisions are considered rare, and while usually a good thing for an adversary, this exerise wants us to get the original password, regardless if the one we found has a matching hash. Fortunately, collisions should be of no concern for this CTF.
 
 ## Task 1
-### 48bb6e862e54f2a795ffc4e541caed4d
+<details>
+<summary> <b>Hash: 48bb6e862e54f2a795ffc4e541caed4d</b> </summary>
 First, let's identify this bad boy.
 
 ```
@@ -50,7 +51,10 @@ Result: <b>easy</b>
 
 Note: If you ever want to see cracked hashes, hashcat saves a potfile with each one. You can specify the path using `hashcat -a <attack> -m <method> <hash> <wordlist> --potfile-path <path>`. The default location is /home/User/.local/share/hashcat/hashcat.potfile.
 
-### CBFDAC6008F9CAB4083784CBD1874F76618D2A97
+</details>
+
+<details>
+<summary><b>Hash: CBFDAC6008F9CAB4083784CBD1874F76618D2A97</b></summary>
 Round two baby. bring it.
 
 ```
@@ -81,7 +85,9 @@ cbfdac6008f9cab4083784cbd1874f76618d2a97:password123
 
 Result: <b>password123</b>
 
-### 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032
+</details>
+<details>
+<summary> <b>Hash: 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B336B63032</b> </summary>
 We're getting in the groove of things. Let's do the same SHAbang (get it?).
 
 ```
@@ -108,7 +114,9 @@ $ hashcat -a 0 -m 1400 1C8BFE8F801D79745C4631D09FFF36C82AA37FC4CCE4FC946683D7B33
   
 Result: <b>letmein</b>
 
-### $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom
+</details>
+<details>
+<summary> <b>Hash: $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom</b> </summary>
 Alright, same song and dance, this'll be...
 
 ```
@@ -138,7 +146,9 @@ $2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom:bleh
 
 Result: <b>bleh</b>
 
-### 279412f945939ba78ce0758d3fd83daa
+</details>
+<details>
+<summary> <b>Hash: 279412f945939ba78ce0758d3fd83daa</b> </summary>
 Okay, this one appears simple, but there's a kicker. Let's begin.
 
 ```
@@ -180,11 +190,13 @@ $ grep -r "Eternity2" /usr/share/wordlists/
 Looks like 'Eternity2' and 'Eternity23' were in our wordlist. Unfortunately, a change in just one character makes a completely different hash, so if we don't have exactly the right password, we would have no way of knowing how close we were when checking these entries. This leads me to suggest that possibly the CTF creator made a typo and hashed 'Eternity22' instead of 'Eternity23' for the problem.  
 
 A more likely cause is that the CTF creator had a more advanced wordlist at their disposal. There are updated versions of the rockyou.txt file, and from downloading multiple different versions and probably some malware along the way, I can confirm that 'Eternity22' does indeed pop up in some of them. I'm still willing to bet the difficulty this has made this particular problem was unintentional.
+</details>
 
 ## Task 2
 The following set is guaranteed to crack with the 'rock you' password list.
 
-### F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
+<details>
+<summary> <b>Hash: F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85</b> </summary>
 
 ```
 $ hashid F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
@@ -207,7 +219,9 @@ Result: <b>paule</b>
 
 EZ-PZ. Next one.  
 
-### 1DFECA0C002AE40B8619ECF94819CC1B
+</details>
+<details>
+<summary> <b>Hash: 1DFECA0C002AE40B8619ECF94819CC1B</b> </summary>
 
 ```
 $ hashid 1DFECA0C002AE40B8619ECF94819CC1B                                          
@@ -240,8 +254,11 @@ $ hashcat -a 0 -m 1000 1DFECA0C002AE40B8619ECF94819CC1B /usr/share/wordlists/roc
 
 Result: <b>n63umy81kf4i</b>
 
-### Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
-### Salt: aReallyHardSalt
+</details>
+<details>
+<summary> <b>Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.  
+
+Salt: aReallyHardSalt</b> </summary>
 
 Remember, we should use escape characters wherever the hash interpretation may fail. Also, a salt is provided, but we can see it already embedded in the hash, as some formats do. We can treat this as a normal hash.
 
@@ -269,8 +286,11 @@ $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41
 This one takes a lot of computing power, so be patient. As mentioned in the beginning, you can run it through a filtered rockyou.txt file since TryHackMe specifies the solution's length: `awk 'length($0) == 6' /usr/share/wordlists/rockyou.txt > rockyou_length_6.txt`.  
 Result: <b>waka99</b>
 
-### Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6
-### Salt: tryhackme
+</details>
+<details>
+<summary> <b>Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6  
+
+Salt: tryhackme </b> </summary>
 
 This one does not have the salt in the hash. We will need to specify it. Hashcat does this using ':' between the hash and salt.
 
@@ -293,3 +313,4 @@ e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme:481616481616
 Result: <b>481616481616</b>  
 
 Note that since a salt is required, we went with 160. This is indicative by the "key=\$salt" phrasing.
+</details>
