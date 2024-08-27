@@ -32,6 +32,6 @@ PRINT stringInput
 ```
 
 ## Time Complexity
-There are two main methods described here. Reading each char from last to first will iterate once through n chars, requiring n operations. This is O(n) = $\Omega$(n) = $\Theta$(n).
+There are two main methods described here. Reading each char from last to first will iterate once through n chars, requiring n operations. This is $O(n)$ = $\Omega(n)$ = $\Theta(n)$.
 
-The second method is to loop through half of the n chars, swapping them with the other half. This iteration requires n/2 operations. While guaranteed more efficient, it is only so by a constant, so the time complexity is still evaluated as O(n/2) = O(n) = $\Omega$(n) = $\Theta$(n).
+The second method is to loop through half of the n chars, swapping them with the other half. This iteration requires n/2 operations. While guaranteed more efficient, it is only so by a constant, so the time complexity is still evaluated as $O(n/2)$ = $O(n)$ = $\Omega(n)$ = $\Theta(n)$.

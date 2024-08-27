@@ -6,11 +6,10 @@ The output is expected to be the number of windows still covered by curtains, so
 
 ## Psuedo Code
 ```
-INPUT n
-INPUT m
+INPUT n, m
 
 PRINT n-m
 ```
 
 ## Time Complexity
-There are only ever two inputs that are subtracted from each other, so this is O(1) = $\Omega$(1) = $\Theta$(1).
+There are only ever two inputs that are subtracted from each other, so this is $O(1)$ = $\Omega(1)$ = $\Theta(1)$.

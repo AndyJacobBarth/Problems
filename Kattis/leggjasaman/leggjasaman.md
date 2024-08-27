@@ -4,11 +4,10 @@ This word problem boils down to adding two numbers. The edge cases do not requir
 
 ## Psuedo Code
 ```
-INPUT arnar
-INPUT hannes
+INPUT arnar, hannes
 
 PRINT arnar + hannes
 ```
 
 ## Time Complexity
-This is exactly O(1) = $\Omega$(1) = $\Theta(1)$.
+This is exactly $O(1)$ = $\Omega$(1) = $\Theta(1)$.
