@@ -12,4 +12,4 @@ PRINT n-m
 ```
 
 ## Time Complexity
-There are only ever two inputs that are subtracted from each other, so this is $O(1)$ = $\Omega(1)$ = $\Theta(1)$.
+There are only ever two inputs that are subtracted from each other, so this is $O(1) = \Omega(1) = \Theta(1)$.

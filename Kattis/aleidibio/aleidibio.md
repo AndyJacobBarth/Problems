@@ -17,4 +17,4 @@ PRINT(c - a - b)
 ```
 
 ## Time Complexity
-The time complexity is constant, or $O(1)$ = $\Omega(1)$ = $\Theta(1)$.
+The time complexity is constant, or $O(1) = \Omega(1) = \Theta(1)$.
