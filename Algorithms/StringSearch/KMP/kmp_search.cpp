@@ -14,7 +14,7 @@ int kmp_search(std::string txt, std::string pat) {
     int pat_length = pat.length();
 
     // Prefix array, aka. 'longest prefix suffix'
-    // Defined further within lps.cpp
+    // Defined further within lps_algorithm.cpp
     int lps[pat_length];
 
     lps_algorithm(pat, lps);
