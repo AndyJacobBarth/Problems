@@ -28,6 +28,7 @@ int kmp_search(std::string txt, std::string pat) {
                 j++;
                 
                 // If pattern has fully been iterated through, we're done
+                // To find multiple occurrences, save i-j to a vector and set j = lps[j-1]
                 if (j == pat_length)
                     return i - j;
         }
