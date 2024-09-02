@@ -23,4 +23,4 @@ ELSE
 ```
 
 ## Time Complexity
-Both methods run at a constant time $O(1) = \Omega(1) = \Theta(1)$.
+Both methods run at a constant time $O(1) = \Omega(1) = \Theta(1)$ due to only having a single comparison to make.
