@@ -10,4 +10,4 @@ PRINT "TIL HAMINGJU MED AFMAELID FORRITUNARKEPPNI FRAMHALDSSKOLANNA!"
 ```
 
 ## Time Complexity
-This is precisely $O(1) = \Omega(1) = \Theta(1)$.
+This single print operation is precisely $O(1) = \Omega(1) = \Theta(1)$.
