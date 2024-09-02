@@ -10,4 +10,4 @@ PRINT arnar + hannes
 ```
 
 ## Time Complexity
-This is exactly $O(1)$ = $\Omega$(1) = $\Theta(1)$.
+This single addition operation is exactly $O(1)$ = $\Omega$(1) = $\Theta(1)$.
