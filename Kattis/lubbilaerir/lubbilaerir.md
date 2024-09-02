@@ -11,4 +11,4 @@ OUTPUT object[0]
 ```
 
 ## Time Complexity
-The time complexity is exactly $O(1) = \Omega(1) = \Theta(1)$.
+Extracting the first char of a string and printing it is exactly $O(1) = \Omega(1) = \Theta(1)$.
