@@ -9,4 +9,4 @@ OUTPUT "Kvedja,\n" + name
 ```
 
 ## Time Complexity
-This is exactly time complexity $O(1) = \Omega(1) = \Theta(1)$.
+This single print operation is exactly time complexity $O(1) = \Omega(1) = \Theta(1)$.
