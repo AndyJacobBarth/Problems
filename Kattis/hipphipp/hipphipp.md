@@ -11,4 +11,4 @@ FOR 20 iterations:
 ``` 
 
 ## Time Complexity
-This is precisely $O(1) = \Omega(1) = \Theta(1)$.
+While we are iterating in a for loop, it is on a fixed amount, with precisely 20 print operations. The time complexity is therefore $O(1) = \Omega(1) = \Theta(1)$.
