@@ -14,7 +14,7 @@ The KMP algorithm looks at the search pattern and sees if characters in the begi
 ----|---|---|---|
 | 0 | 0 | 1 | 0 |
 
-For the purposes of this problem, I won't go much more in depth. Just think of it like this: Intuitively, if we came across the text 'ababac', the first four characters 'abab' are not a match to the pattern above, but 'aba' was. That second 'a' could be the start of the string we're looking for (and indeed it is), so the prefix table keeps track of possible ways the string we're looking for can start **within** the string we're checking.
+For the purposes of this problem, I won't go much more in depth. Just think of it like this: Intuitively, if we came across the text 'ababac', the first four characters 'abab' are not a match to the pattern above, but 'aba' was. That second 'a' could be the start of the string we're looking for (and indeed it is), so the prefix table keeps track of possible ways the string we're looking for can start *within* the string we're checking.
 
 The string it specifically asks us to check for is 'COV', which clearly has no matching prefix-suffix since each character in the pattern is unique. If we made a prefix table, it would be the following:
 
@@ -122,10 +122,10 @@ ELSE:
     PRINT "Ekki Veikur!"
 
 ```
-Note that the first and last pseudocode examples are essentially the same. When j = 0 (no match), the KMP algorithm executes `i++` twice, effectively doing what the original code does when it executes `i += 2`. Instead of the variable j being used, the pattern is short enough to hardcode the iterations `i`, `i+1`, and `i+2`.
+Note that the first and last pseudocode examples are essentially the same. When j is not $0$ during a mismatch, the KMP algorithm executes `i++` twice, effectively doing what the original code does when it executes `i += 2`. Instead of the variable j being used, the pattern is short enough to hardcode the iterations `i`, `i+1`, and `i+2`.
 
 ## Time Complexity
-Iterating through the entire string of length $n$ and checking it against a pattern of length $m$ every time forces the algorithm into a complexity of $O(m \times n)$.
+Iterating through the entire string of length $n$ and checking it against a pattern of length $m$ every time forces the algorithm into a complexity of $O(n \times m)$.
 
 Utilizing the KMP algorithm, we iterate through the string of length $n$ without going back, while checking our pattern. Because we are not rechecking the instances where we've guaranteed a match, we are iterating through the text and pattern at complexity $O(n)$.  
 
