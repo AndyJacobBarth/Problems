@@ -18,4 +18,4 @@ PRINT(c - a - b)
 ```
 
 ## Time Complexity
-The time complexity is constant, or $O(1) = \Omega(1) = \Theta(1)$.
+Because we are only doing two subtraction operations, the time complexity is constant, or $O(1) = \Omega(1) = \Theta(1)$.
