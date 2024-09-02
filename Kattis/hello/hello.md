@@ -8,4 +8,4 @@ PRINT "Hello world!"
 ```
 
 ## Time Complexity
-This is exactly time complexity $O(1) = \Omega(1) = \Theta(1)$.
+Printing a fixed output is exactly time complexity $O(1) = \Omega(1) = \Theta(1)$.
