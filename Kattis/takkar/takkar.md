@@ -4,7 +4,7 @@ This problem is a simple conditional problem. We have two inputs - Trump and Kim
 
 The output is based on conditionals. If Trump's button is larger, we print `MAGA!`, if Kim's is larger we print `FAKE NEWS!`, and if they're equal we print `WORLD WAR 3!`. This calls for an if/else if/else statement. It does not matter the order that we put these conditionals.
 
-Edge cases are of no concern either. $0 \leq a, b \leq 10^9$, so as long as the integer data type we're using is 32-bits ($2^{32} \approx 2 \times 10^9 > 10^9$).
+Edge cases are of no concern either. $0 \leq a, b \leq 10^9$, so as long as the integer data type we're using is at least 32-bit signed integer ($2^{31}-1 \gt 2 \times 10^9 > 10^9$).
 
 ## Psuedo Code
 ```
