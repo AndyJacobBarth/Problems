@@ -16,7 +16,7 @@ ELSE
 String method:
 ```
 INPUT n
-IF n[length(n)] == '0':
+IF n[length(n) - 1] == '0':
     OUTPUT "Jebb"
 ELSE
     OUTPUT "Neibb"
