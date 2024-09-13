@@ -6,7 +6,7 @@ We can make a dictionary of key-value pairs, established as guest and their fun 
 
 In the pseduo code example, we use a while loop instead of a for loop because $n$ is solely used to describe number of inputs. This is a common method, but a for loop can be used all the same with little-to-no performance differences depending on optimization by compilers, if the programming language uses one.
 
-A fun fact about the test cases is that I initially submitted a solution that did not replace the best_metric variable, yet all cases still passed. This means the designer did not make a test case to check for this. Therefore all $26$ test cases happened to have the last person to have a fun metric greater than the first person to also have the largest fun metric of everyone, which is a remarkable oversight.
+A fun fact about the test cases is that I initially submitted a solution that did not replace the `best_metric` variable, yet all cases still passed. This means the designer did not make a test case to check for this. Therefore all $26$ test cases happened to have the last person to have a fun metric greater than the first person to also have the largest fun metric of everyone, which is a remarkable oversight.
 
 ## Psuedo Code
 ```
