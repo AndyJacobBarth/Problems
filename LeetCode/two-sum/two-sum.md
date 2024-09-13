@@ -1,7 +1,10 @@
-# [Two-sum](https://leetcode.com/problems/two-sum)
+# [Two-sum]("https://leetcode.com/problems/two-sum")
 
-## Psuedo Code
+
+
+## Pseudo Code
 ```
+
 ```
 
 ## Time Complexity
