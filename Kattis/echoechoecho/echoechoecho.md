@@ -1,4 +1,4 @@
-# [Echoechoecho(https://open.kattis.com/problems/echoechoecho)
+# [Echo Echo Echo](https://open.kattis.com/problems/echoechoecho)
 
 This problem asks us to print the output three times with spaces on the same line. This problem is pretty straightforward, and even gives us ways to gather input for popular programming languages.
 

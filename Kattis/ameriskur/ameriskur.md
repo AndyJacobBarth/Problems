@@ -1,4 +1,4 @@
-# [Ameriskur(https://open.kattis.com/problems/ameriskur)
+# [Ameriskur](https://open.kattis.com/problems/ameriskur)
 
 This problem simply gives us a measurement in football fields $n$ that we must convert to kilometers.
 

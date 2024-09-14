@@ -1,4 +1,4 @@
-# [Oddecho(https://open.kattis.com/problems/oddecho)
+# [Odd Echo](https://open.kattis.com/problems/oddecho)
 
 This problem gives us the number of following inputs $n$, for which we must print out every odd-indexed input.
 

@@ -1,4 +1,4 @@
-# [Vedurheidar(https://open.kattis.com/problems/vedurheidar)
+# [Vedurheidar](https://open.kattis.com/problems/vedurheidar)
 
 This problem gives us the current windspeed $v$ in Iceland, along with a number of roads $n$. The following $n$ input is a road name $s_i$ and their respective maximum safe wind speeds $k_i$. We must print each road and whether it is safe (`lokud`) or unsafe (`opin`) to drive.
 

@@ -1,4 +1,4 @@
-# [Isyavowel(https://open.kattis.com/problems/isyavowel)
+# [Is Y a Vowel](https://open.kattis.com/problems/isyavowel)
 
 This problem asks us to count the number of vowels in a strictly lowercase string, once assuming 'y' is not a vowel, and a second time assuming 'y' is a vowel.
 

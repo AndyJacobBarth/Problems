@@ -1,4 +1,4 @@
-# [Spritt(https://open.kattis.com/problems/spritt)
+# [Spritt](https://open.kattis.com/problems/spritt)
 
 This problem gives us $n$ classrooms provided with $x$ sanitizer. We then have $n$ input, each indicating the amount of sanitizer required for each classroom $a_i$. We must print `Jebb` if we have enough sanitizer for all the classrooms, or `Neibb` otherwise.
 

@@ -1,4 +1,4 @@
-# [Hipphipphurra](https://open.kattis.com/problems/hipphipphurra)
+# [Hipp Hipp Hurra](https://open.kattis.com/problems/hipphipphurra)
 
 This problem asks us to print `Hipp hipp hurra, <name>!` For a given name for a given $x$ amount of times. This can be done straightforwardly using a for loop.
 

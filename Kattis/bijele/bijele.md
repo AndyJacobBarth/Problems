@@ -1,4 +1,4 @@
-# [Bijele(https://open.kattis.com/problems/bijele)
+# [Bijele](https://open.kattis.com/problems/bijele)
 
 This problem gives us, in order, the amount of:
 

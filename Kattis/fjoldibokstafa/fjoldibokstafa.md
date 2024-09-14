@@ -1,4 +1,4 @@
-# [Fjoldibokstafa(https://open.kattis.com/problems/fjoldibokstafa)
+# [Fjoldibokstafa](https://open.kattis.com/problems/fjoldibokstafa)
 
 This problem is concerned with the letter count of a given text $n$ consisting of one line and no whitespaces.
 

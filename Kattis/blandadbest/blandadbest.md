@@ -1,4 +1,4 @@
-# [Blandadbest](https://open.kattis.com/problems/blandadbest)
+# [Blandad Best](https://open.kattis.com/problems/blandadbest)
 
 This problem is interesting in its simplicity. It will give us an integer $n$, $1$ or $2$, specifying the number of following outputs, which are unique types of meat. It wants us to output the name of the meat if $ n = 1 $ or `blandad best` if $ n = 2 $.
 

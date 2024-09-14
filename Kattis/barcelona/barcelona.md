@@ -1,4 +1,4 @@
-# [Barcelona(https://open.kattis.com/problems/barcelona)
+# [Barcelona](https://open.kattis.com/problems/barcelona)
 
 In this problem, we receive the total number of luggage $n$ and Benni's, this problem's protagonist, bag id $k$. This is followed by the IDs of the $n$ luggage with IDs $a_1,a_2,...,a_n$. If his ID is first, we print `fyrst`, if second we print `naestfyrst`, and otherwise we print `i fyrst`, where `i` is the index at which Benni's ID is located.
 
