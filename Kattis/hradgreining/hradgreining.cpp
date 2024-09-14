@@ -3,11 +3,9 @@
 
 int main() {
     std::string userInput;
-    std::string cov = "COV";
-
     std::cin >> userInput;
 
-    if (userInput.find(cov) == std::string::npos) {
+    if (userInput.find("COV") == std::string::npos) {
         std::cout << "Ekki Veikur!\n";
     }
     else {
