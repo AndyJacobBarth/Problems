@@ -1,4 +1,4 @@
-# [Umferd]("https://open.kattis.com/problems/umferd")
+# [Umferd(https://open.kattis.com/problems/umferd)
 
 This problem is a traffic problem providing us with the length of the lanes $m$ and the number of lanes $n$. We are then provided with an ASCII representation of cars (#) and empty spots (.) based on an $n \times m$ representation. We must find the proportion of empty spaces to an accuracy of $10^{-5}$.
 

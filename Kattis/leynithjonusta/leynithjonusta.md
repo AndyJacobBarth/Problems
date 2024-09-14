@@ -1,4 +1,4 @@
-# [Leynithjonusta]("https://open.kattis.com/problems/leynithjonusta")
+# [Leynithjonusta(https://open.kattis.com/problems/leynithjonusta)
 
 This problem gives us emails that they wish to interpret without any spaces. We need to remove this whitespace.
 

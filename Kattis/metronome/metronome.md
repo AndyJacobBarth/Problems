@@ -1,4 +1,4 @@
-# [Metronome]("https://open.kattis.com/problems/metronome")
+# [Metronome(https://open.kattis.com/problems/metronome)
 
 A metronome is used in this problem, giving $4$ ticks for every revolution of its key. Given the length of a song in $n$ ticks, we need to calculate the number of revolutions needed with the key.
 

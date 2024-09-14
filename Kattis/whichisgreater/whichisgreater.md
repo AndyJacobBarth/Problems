@@ -1,4 +1,4 @@
-# [Whichisgreater]("https://open.kattis.com/problems/whichisgreater")
+# [Whichisgreater(https://open.kattis.com/problems/whichisgreater)
 
 In this problem, we are simply comparing two inputs $a,b$, returning $1$ if $a > b$ and $0$ otherwise. We can use an if conditional.
 

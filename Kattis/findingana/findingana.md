@@ -1,4 +1,4 @@
-# [Findingana]("https://open.kattis.com/problems/findingana")
+# [Findingana(https://open.kattis.com/problems/findingana)
 
 In this problem, we must look at a string from chars $s_1, ..., s_i$ such that we print the string after the first occurrence of the letter 'a'. We are guaranteed the letter 'a' will be within the string.
 

@@ -1,4 +1,4 @@
-# [Skak]("https://open.kattis.com/problems/skak")
+# [Skak(https://open.kattis.com/problems/skak)
 
 The problem involves a rook's position $x_h,y_h$ and a pawn's position $x_p,y_p$, the only two remaining pieces in a chess game. We must decide how many moves it will take the rook to take the pawn.
 

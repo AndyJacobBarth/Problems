@@ -1,4 +1,4 @@
-# [Decimaldeletion]("https://open.kattis.com/problems/decimaldeletion")
+# [Decimaldeletion(https://open.kattis.com/problems/decimaldeletion)
 
 This problem is simplified to a rounding problem for our input $N$. The problem is generous and will accept either input if the value is exactly between two integers.
 

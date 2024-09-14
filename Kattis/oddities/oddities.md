@@ -1,4 +1,4 @@
-# [Oddities]("https://open.kattis.com/problems/oddities")
+# [Oddities(https://open.kattis.com/problems/oddities)
 
 In this problem, we are given $n$ input and must determine if they are even or odd.
 
