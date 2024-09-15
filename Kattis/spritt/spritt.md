@@ -8,7 +8,7 @@ It's important to note that $x \leq 10^8$ while $a_i \leq 10^8$. This means it's
 
 The problem does specify that $\sum a_i \leq 2 \times 10^9$. This peculiar information is telling us that the problem expects us to use 32-bit signed integer, as 
 
-$\max 32\_signed\_int = 2^{31}-1 > 2 \times 10^9$
+$\max 32 \textunderscore signed \textunderscore int = 2^{31}-1 > 2 \times 10^9$
 
 and no data type larger is required.
 
