@@ -12,4 +12,4 @@ FOR i IN {1..N}:
 ```
 
 ## Time Complexity
-Because we must print $N = n$ times, this becomes time complexity of $ O(n) = \Omega(n) = \Theta(n) $.
+Because we must print $N = n$ times, this becomes time complexity of $O(n) = \Omega(n) = \Theta(n)$.

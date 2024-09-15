@@ -1,6 +1,6 @@
 # [Bladra 2](https://open.kattis.com/problems/bladra2)
 
-This is a problem giving us inputs $v, a, $ and $t$ as velocity, acceleration, and time, respectively, for a balloon traveling upwards. We must solve for the distance $d$ it travels, which has the following formula:
+This is a problem giving us inputs $v, a,$ and $t$ as velocity, acceleration, and time, respectively, for a balloon traveling upwards. We must solve for the distance $d$ it travels, which has the following formula:
 
 $d = vt + \frac 12 at^2$
 

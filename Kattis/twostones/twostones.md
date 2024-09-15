@@ -8,7 +8,7 @@ The solution arises from the simple fact that they are always removing two stone
 
 Depending on the optimization of the compiled programming language, modularity could be used for readability. The most efficient way would be to use low-level operations like bitmasking. If a number is even, it's bit string will end in a $1$, and end in a $0$ if odd. We can check this by using the bitwise `&` operation on the input and $1$.
 
-We should note that $ N \leq 10^7 $. It would be safest to use a 32-bit signed integer here ($ 2^{31} - 1 > 2 \times 10^9 > 10^9 > 10^7 \geq N $)
+We should note that $N \leq 10^7$. It would be safest to use a 32-bit signed integer here ($2^{31} - 1 > 2 \times 10^9 > 10^9 > 10^7 \geq N$)
 
 ## Psuedo Code
 Using modulo operator:
@@ -28,4 +28,4 @@ ELSE:
     PRINT("Bob")
 ```
 ## Time Complexity
-Because we are doing a comparison on a single integer, this has complexity $ O(1) = \Omega(1) = \Theta(1) $.
+Because we are doing a comparison on a single integer, this has complexity $O(1) = \Omega(1) = \Theta(1)$.

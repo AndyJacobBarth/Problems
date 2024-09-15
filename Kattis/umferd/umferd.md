@@ -6,7 +6,7 @@ We can multiply $n$ and $m$ to get the denominator of our overall proportion. On
 
 We can treat each $n$ lines as a string, and iterate through them for the occurrence of every '.'.
 
-We know from the problem that $ 1 \leq n, m \leq 500$, so we should not be concerned with any limitations here. If $n$ was very large, we could consider using a more efficient approach at minimizing the I/O by interpreting everything after $n, m$ as one input, but this is unnecessary. The total string length we are interpreting will be:
+We know from the problem that $1 \leq n, m \leq 500$, so we should not be concerned with any limitations here. If $n$ was very large, we could consider using a more efficient approach at minimizing the I/O by interpreting everything after $n, m$ as one input, but this is unnecessary. The total string length we are interpreting will be:
 
 $\max \{ n \} \times \max \{ m \} = 500 \times 500 = 2.5 \times 10^5$.
 

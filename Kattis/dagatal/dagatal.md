@@ -10,7 +10,7 @@ An interesting, but less efficient way, is to come up with a mathematical formul
 
 For the sequence of 30 days, it's *almost* interesting that they are either $1$ or $4 \mod 5$, but obviously $1$ is also in this sequence, which is for 31 days. Any further results appear to not be practically reversible, or include digits we don't want to include.  
 
-For the sequence of 31 days, it's revealed that they are part of the [Beatty sequence](https://en.wikipedia.org/wiki/Beatty_sequence) for $(3 + \sqrt{17})/4$, $ \sqrt{\pi}$, and $e^\gamma$, where $\gamma$ is the [Euler-Mascheroni constant](https://en.wikipedia.org/wiki/Euler%27s_constant). It is proven that  a month $m$ belongs to one of these Beatty sequences iff $1 - \frac 1r < [ \frac mr ]$, where $[\frac mr]$ is the fractional part. With enough precision, we can compare whether the number $1 \leq m \leq 12$ obeys this condition. Using this is most certainly overkill and would only increase the number of operations, but it was fun to explore.
+For the sequence of 31 days, it's revealed that they are part of the [Beatty sequence](https://en.wikipedia.org/wiki/Beatty_sequence) for $(3 + \sqrt{17})/4$, $\sqrt{\pi}$, and $e^\gamma$, where $\gamma$ is the [Euler-Mascheroni constant](https://en.wikipedia.org/wiki/Euler%27s_constant). It is proven that  a month $m$ belongs to one of these Beatty sequences iff $1 - \frac 1r < [ \frac mr ]$, where $[\frac mr]$ is the fractional part. With enough precision, we can compare whether the number $1 \leq m \leq 12$ obeys this condition. Using this is most certainly overkill and would only increase the number of operations, but it was fun to explore.
 
 ## Psuedo Code
 Comparing each case:
