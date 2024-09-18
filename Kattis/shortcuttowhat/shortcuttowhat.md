@@ -2,7 +2,7 @@
 
 This problem gives us an integer $n$ and asks us to perform the following:
 
-$ 3 \times (n + 5) - 10$
+$3 \times (n + 5) - 10$
 
 It's possible the challenge of this problem is to understand order of operations. We can directly output the result of performing these operations.
 
