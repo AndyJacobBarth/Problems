@@ -1,4 +1,4 @@
-# [Secondopinion]("https://open.kattis.com/problems/secondopinion")
+# [Second Opinion]("https://open.kattis.com/problems/secondopinion")
 
 This problem gives us a number of seconds $s$ and asks us to output time in the format `HH : MM : SS`. The sample output suggest that there should be no leading 0's, although this is not specified.
 
