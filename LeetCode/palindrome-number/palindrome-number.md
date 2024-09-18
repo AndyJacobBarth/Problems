@@ -4,7 +4,7 @@ This problem asks us to return `TRUE` if the integer input $x$ is a palindrome n
 
 It appears negative values are present, which are automatically not palindromes. We can convert the integer to a string and traverse from the end to the beginning, comparing chars. We default to assuming it is a palindrome, and return `FALSE` if we detect a discrepancy. Logically, we only need to check $\lfloor$ `LENGTH(x) / 2` $\rfloor$, where the floor operation is necessary in case the integer has odd digits, preventing us from redundantly checking whether the middle digit is equal to itself. In programming, this can be achieved by integer division.
 
-The follow-up asks if we can perform this without converting into a string. It turns out converting to a string and doing string operations following is more intensive than if we maintain our operations at the integer level.
+The follow-up asks if we can perform this without converting into a string. It turns out converting to a string and doing string operations following is more intensive than if we maintain our operations at the integer level. I will be referring to the right-most digit as the Least Significant Digit, or LSD, akin to the binary Least Significant Bit (LSB).
 
 We still check if $x < 0$ and return `FALSE` if this is the case. Then we can extract the LSD from $x$, save it to some variable `comparison`, shift $x$ one decimal place down, and shift `comparison` one place up. We repeat until we create a new number. This effectively reverses $x$, and we can compare if `x == comparison`. Since we need to compare $x$, at the end, we should store $x$ in some variable `temp` and do the manipulations on `temp`.
 
