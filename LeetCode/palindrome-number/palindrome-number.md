@@ -48,7 +48,7 @@ temp = x, comparison = 0
 WHILE temp > 0:
     comparison *= 10
     comparison += temp - (temp / 10) * 10
-    temp /= 10
+    temp //= 10
     
 IF x == comparison:
     RETURN TRUE
@@ -56,3 +56,6 @@ RETURN FALSE
 ```
 
 ## Time Complexity
+Converting $x$ to a string is considered $O(1)$ time. Iterating through $x$ from the ends and to the middle requires looping through $n / 2$ chars, with one comparison operation taking $O(1)$ time. The worst-case is therefore $O(n/2) = O(n)$. In the best case, either $x < 0$ or we find a mismatch early on, and these will take $\Omega(1)$.
+
+In the integer manipulation, the manipulations upon `comparison` and `x` is $O(1)$ time. Looping through $x$'s digits requires $O(\log_{10}n) = O(\log n)$ time. The final comparison is considered to be $O(1)$ time, making the worst case $O(\log n)$. In the best case, as before, we will terminate when $x < 0$ in $\Omega(1)$ time.
