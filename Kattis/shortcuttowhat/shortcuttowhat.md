@@ -1,4 +1,4 @@
-# [Shortcuttowhat]("https://open.kattis.com/problems/shortcuttowhat")
+# [Shortcut to What]("https://open.kattis.com/problems/shortcuttowhat")
 
 This problem gives us an integer $n$ and asks us to perform the following:
 
