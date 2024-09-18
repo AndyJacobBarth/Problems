@@ -1,4 +1,4 @@
-# [Betting]("https://open.kattis.com/problems/betting")
+# [Betting](https://open.kattis.com/problems/betting)
 
 The problem statement is influenced by the functionality of betting channel points on Twitch, but in a copyright-friendly way. It asks that between two options, if a percentage $a$ of switch points was put on the first option, what would be the ratio of return for the first and second options, respectively?
 

@@ -1,4 +1,4 @@
-# [Palindrome-number]("https://leetcode.com/problems/palindrome-number")
+# [Palindrome-number](https://leetcode.com/problems/palindrome-number)
 
 This problem asks us to return `TRUE` if the integer input $x$ is a palindrome number and `FALSE` otherwise.
 

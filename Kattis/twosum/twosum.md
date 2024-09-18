@@ -1,4 +1,4 @@
-# [Two-Sum]("https://open.kattis.com/problems/two-sum")
+# [Two-Sum](https://open.kattis.com/problems/two-sum)
 
 This problem asks us to add two integers $a, b$.
 
