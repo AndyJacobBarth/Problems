@@ -14,7 +14,7 @@ Extracting the LSD is accomplished by modulo $10$, but the modulus operator can 
 
 When `temp` is divided by $10$, this effectively shifts `temp` a decimal down. When we multiply by $10$, it shifts `temp` a decimal up, but now the one's place is set to $0$. We can then subtract this value from `temp` to extract the LSD. We've effectively created a base-$10$ bit mask (decimal-mask?) of the LSD.
 
-The specifications for $x$ is exactly the limitations for a 32-bit signed integer, so we should use at least this data type when assigning $x$.
+The specifications for $x$ is exactly the limitations for a 32-bit signed integer, so we should use at least this data type when assigning $x$. Using integer manipulation can cause overflow if the integer is $9$ digits long and $x$ backwards is greater than $2^{31}-1$. We can use larger data types to accomodate for this, or unsigned data types since we already checked $x \geq 0$.
 
 In the below pseudocode, `RETURN` is used to break out of the program and `//` denotes integer divison.
 
