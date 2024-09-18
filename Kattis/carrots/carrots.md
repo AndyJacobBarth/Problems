@@ -1,4 +1,4 @@
-# [Carrots]("https://open.kattis.com/problems/carrots")
+# [Carrots](https://open.kattis.com/problems/carrots)
 
 This problem gives us a number of contestants $N$ and the number of 'huffle-puff' problems $P$ that they solve. The following $N$ lines are descriptions about each contestant. We are wanting to output the number of carrots that will be handed out.
 
