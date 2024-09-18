@@ -83,7 +83,7 @@ FOR i IN {0..nums_length - 1}:
         PRINT [i, hash_map[complement]]
         BREAK
     ELSE:
-        hash_map.ADD(nums[i], i)
+        hash_map[nums[i]] = i
 ```
 
 ## Time Complexity
