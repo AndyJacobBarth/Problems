@@ -1,6 +1,6 @@
-# [Reverse Binary](https://open.kattis.com/problems/reversebinary)
+f# [Reverse Binary](https://open.kattis.com/problems/reversebinary)
 
-This problem asks us to reverse a number $N$'s binary and print out the base-$10$ result.
+This problem asks us to reverse a number $N$'s binary and print out the base- $10$ result.
 
 If we take $N$ and modulate by $2$, we get the LSB, or Least Significant Bit (aka. the right-most bit). This When we divide by $2$, we can now take $N \mod 2$ again to receive the second right-most bit. We continue this process until we no longer have any more bits to receive, which is equivalent to if $N$ is $0$.
 
@@ -59,7 +59,7 @@ answer: 1011
 N:      0000
 ```
 
-Now that we have the reversed binary, we need to print this out in base-$10$. We can achieve this by iteratively multiplying the binary from right to left by progressive powers of $2$. This will give us our final answer. However, if right shift is division by $2$, we can do a left shift to multiply by $2$ and save some overhead.
+Now that we have the reversed binary, we need to print this out in base- $10$. We can achieve this by iteratively multiplying the binary from right to left by progressive powers of $2$. This will give us our final answer. However, if right shift is division by $2$, we can do a left shift to multiply by $2$ and save some overhead.
 
 In the below pseudocode, we combine all of these steps together. You may notice `answer` is left-shifted before receiving the LSB bitmask for $N$. This is intentional. If done after the bitmask operation, then when $N$ was $0$, `answer` would have been left-shifted one too many times, requiring a right-shift afterwards. (This becomes very problematic, as if we choose to hold `answer` with as many bits as `N`, we may lose a bit here). 
 
