@@ -1,4 +1,4 @@
-# [Detaileddifferences](https://open.kattis.com/problems/detaileddifferences)
+# [Detailed Differences](https://open.kattis.com/problems/detaileddifferences)
 
 This problem gives us an integer $n$ representing the number of following input. There is actually $2n$ following input, as we are given a pair of strings that we need to illustrate the difference between. The strings then must be output, with `*` below a char to denote where the strings differ and `.` below a char to denote where the strings are the same.
 

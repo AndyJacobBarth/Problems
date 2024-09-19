@@ -1,4 +1,4 @@
-# [Digitswap](https://open.kattis.com/problems/digitswap)
+# [Digit Swap](https://open.kattis.com/problems/digitswap)
 
 This problem asks us to swap a $2$-digit number, which we'll call $d$.
 
