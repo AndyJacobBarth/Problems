@@ -28,4 +28,4 @@ PRINT answer
 ```
 
 ## Time Complexity
-The input and output, along with arithmetic operations, all take $O(1)$. We must read the $N$ input without any advanced knowledge of what these values are, so we can do no better than this. This results in an overall time complexity of $O(1) = \Omega(1) = \Theta(1)$.
+The input and output, along with arithmetic operations, all take $O(1)$. We must read the $N$ input without any advanced knowledge of what these values are, so we can do no better than this. This results in an overall time complexity of $O(N) = O(n) = \Omega(n) = \Theta(n)$.
