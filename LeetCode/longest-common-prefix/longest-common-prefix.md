@@ -74,17 +74,8 @@ RETURN
 ## Time Complexity
 If we choose the first string as a basis and compare its chars with every other string, in the worst case, we have all $n$ strings matching of length $m$. The loop will necessarily go through all $m$ chars of all $n$ strings and compare them, result in a time complextiy of $O(n \times m)$. In the best case, we terminate early when the strings have a mismatch (or a string's length is exceeded), resulting in $\Omega(1)$ time.
 
-In the event we sort the array of strings first, we would choose a sorting algorithm such as merge sort that would have time complexity of $O(n \log n)$, even in the best case scenario. We then check each $m$ chars until the end of the first or last string in `strs`. In the worst case, this would be $O(m)$, but if we find a mismatch early, this would be $\Omega(1)$ for looping through chars. Therefore, in the worst case, this would take $O(n \log n + m)$ time, and in the best case, it would take $\Omega(n \log n)$ time.
+In the event we sort the array of strings first, we would choose a sorting algorithm such as merge sort that would have time complexity of $O(n \log n)$, even in the best case scenario. Usually a sorting algorithm does not take into account the length $m$ of the input, but since $m$ is a considerable factor in this problem, we will include it here. This means that the sorting will take time proportional to the length $m$ of the string, modifying the complexity to $O(n \times m \log n)$.
 
-We can see that choosing between the algorithms requires comparing $n \times m$ with $n \log n + m$. If $n \approx m$, then
+ We then check each $m$ chars until the end of the first or last string in `strs`. In the worst case, this would be $O(m)$, but if we find a mismatch early, this would be $\Omega(1)$ for looping through chars. Therefore, in the worst case, this would take $O(m \times n \log n + m) = O(m(n \log n + 1))$ time, and in the best case, it would take $\Omega(mn \log n)$ time.
 
-$n \times m$ &rarr; $n \times n = n^2$ \
-$n \log n + m$ &rarr; $n \log n + n = n(\log n + 1)$
-
-We see that the initial algorithm is roughly $O(n^2)$ and the sorting algorithm is approximately $O(n \log n)$, so the sorting algorithm is better. This is the concept that our string length is proportional to the number of strings.
-
-If $n >> m$, the initial algorithm becomes dominantly $O(n)$ while the sorting algorithm becomes $O(n \log n)$, and hence our initial algorithm is better. This means for predictably short string lengths and a large input size, our initial algorithm is better.
-
-If $n << m$, then both algorithms are better approximated as $O(m)$, and either algorithm could be used. This means that for sufficiently long strings where there isn't as many of them, either algorithm would provide similar results.
-
-In this particular problem, we have no advanced information of the string that is input, and the constraints are the same for $n$ and $m$, so ultimately either algorithm can be used.
+Because $n \log n + 1 > n$ and $n > 1$, it follows that the sorting algorithm is strictly worse than our initial algorithm. What initially seems to be a more optimized approach actually ends up being worse.
