@@ -78,8 +78,8 @@ In the event we sort the array of strings first, we would choose a sorting algor
 
 We can see that choosing between the algorithms requires comparing $n \times m$ with $n \log n + m$. If $n \approx m$, then
 
-$n \times m $ &rarr; $n \times n = n^2$ \
-$ n \log n + m$ &rarr; $n \log n + n = n(\log n + 1)$
+$n \times m$ &rarr; $n \times n = n^2$ \
+$n \log n + m$ &rarr; $n \log n + n = n(\log n + 1)$
 
 We see that the initial algorithm is roughly $O(n^2)$ and the sorting algorithm is approximately $O(n \log n)$, so the sorting algorithm is better. This is the concept that our string length is proportional to the number of strings.
 
