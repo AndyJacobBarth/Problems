@@ -10,7 +10,7 @@ We will take the input and multiply it by $0.09144$.
 
 We see that $n \leq 10^5$, so we just need to make sure that we can take in input as 32-bit signed integer because of the following:
 
-$\max 32 \textunderscore bit \textunderscore signed = 2^{31}-1 > 2 \times 10^9 > 10^5 > 3 \times 10^4 \approx \max 16 \textunderscore bit \textunderscore signed$
+$\max 32 \textunderscore signed \textunderscore int \textunderscore max = 2^{31}-1 > 2 \times 10^9 > 10^5 > 3 \times 10^4 \approx \max 16 \textunderscore signed \textunderscore int \textunderscore max$
 
 We should also make sure we use approprate floating point arithmetic such that the precision is within $10^{-5}$. C++ will not by default give the precision needed (I tried), so the use of the `iomanip`'s `std::fixed` and `std::setprecision()` will help. Bash also needs this help with `%.xf` functionality for `printf` (also an alternative for C++). Python's default has sufficient precision.
 
