@@ -6,13 +6,9 @@ By describing the problem, it may be obvious that a stack is needed. If not, we 
 
 Since there can be a rogue parenthesis anywhere, trying to be cheeky and start in the middle won't do us much good. Let's carefully consider whether there may be properties advantageous to us given that a string is valid. Initially, there may seem to require some symmetry, and we could tackle the string within the middle. Below is a counterargument:
 
-<div style="text-align: center">
-
 ```
 ()(())
 ```
-
-</div>
 
 The string is valid, yet evidently it is not symmetrical. We can infer, however, that a valid string must be even in length. That is because every open bracket must have exactly one closing bracket to pair with it. Furthermore, a string must be at least of length $2$. This may help quickly eliminate some test cases. A common way to test for divisibility by $2$ is bitmasking using the bitwise 'AND' operation `&` with $1$. The idea here is that $1$ has leading $0$'s, and `x & 0 = 0` while `x & 1 = x`, so the last bit will be retained. An odd number's binary representation has a $1$ as its right-most bit (aka. Least-Significant Bit, or LSB), so this is an efficient way to check for evenness. Simply checking $\mod 2$ is also a valid approach, as compilers typically will optimize with this bitmask method.
 
@@ -22,13 +18,9 @@ Now, we can approach the string of parentheses either from the start or the end,
 
 What happens when we now consider the different brackets? If we try the same method with a different count between different bracket types, we come across an error. Consider the following:
 
-<div style="text-align: center">
-
 ```
 ([)]
 ```
-
-</div>
 
 This is invalid, because the square brackets must terminate before the parentheses. However, if we depended on our count, we have the right number of opened and closed brackets for each bracket type, so we would see no issue.
 
