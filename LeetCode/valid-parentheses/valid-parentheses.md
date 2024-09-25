@@ -14,7 +14,7 @@ Since there can be a rogue parenthesis anywhere, trying to be cheeky and start i
 
 </div>
 
-The string is valid, yet evidently it is not symmetrical. We can infer, however, that a valid string must be even in length. That is because every open bracket must have exactly one closing bracket to pair with it. Furthermore, a string must be at least of length $2$. This may help quickly eliminate some test cases.
+The string is valid, yet evidently it is not symmetrical. We can infer, however, that a valid string must be even in length. That is because every open bracket must have exactly one closing bracket to pair with it. Furthermore, a string must be at least of length $2$. This may help quickly eliminate some test cases. A common way to test for divisibility by $2$ is bitmasking using the bitwise 'AND' operation `&` with $1$. The idea here is that $1$ has leading $0$'s, and `x & 0 = 0` while `x & 1 = x`, so the last bit will be retained. An odd number's binary representation has a $1$ as its right-most bit (aka. Least-Significant Bit, or LSB), so this is an efficient way to check for evenness. Simply checking $\mod 2$ is also a valid approach, as compilers typically will optimize with this bitmask method.
 
 One other property that may be worth mentioning is that if we were to count open and closed parentheses, say `i` and `j`, respectively, then if at any point `j` > `i`, we can be certain to exit early while returning `FALSE`, at least when iterating from left to right. This is a consequence of a rogue parenthesis appearing. The potential problem is that for a valid string, this would only add overhead, with at most $6$ comparisons for each char (one for each bracket side and type). Because we are able to answer this problem in efficient time without this, it is omitted from our final implementation.
 
@@ -50,6 +50,9 @@ The only constraint is that `s.length` $\leq 10^4$. A $16$-bit signed integer wo
 ## Pseudo Code
 ```
 INPUT s
+IF LENGTH(s) & 1 == 1:
+    PRINT FALSE
+    RETURN
 
 brackets {
     '(': ')',
