@@ -1,4 +1,4 @@
-# [Roman-to-integer](https://leetcode.com/problems/roman-to-integer)
+# [Roman to Integer](https://leetcode.com/problems/roman-to-integer)
 
 In this problem, we must convert Roman numerals from a string $s$ to integers. The problem explains what numeral corresponds to what integer value, and the unintuitive values like `IV` or `CD`.
 

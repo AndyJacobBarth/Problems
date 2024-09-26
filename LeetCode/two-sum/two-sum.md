@@ -1,4 +1,4 @@
-# [Two-Sum](https://leetcode.com/problems/two-sum)
+# [Two Sum](https://leetcode.com/problems/two-sum)
 
 This problem gives us an array of integers `nums` and an integer `target`. We must return the indices of two numbers in `nums` that sums to `target`, given that a solution exists and is unique.
 

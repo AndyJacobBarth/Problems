@@ -1,4 +1,4 @@
-# [Valid-Parentheses](https://leetcode.com/problems/valid-parentheses)
+# [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
 
 In this problem, we have a string of parentheses, square brackets, and curly brackets, referred together as brackets. We must ensure an open bracket must have a corresponding close bracket within the string. The same must be true vice versa, meaning we don't want any stray close brackets. Furthermore, they must be closed in a closed order. That is, the last open bracket must be closed before we can close any other bracket. If any of this is untrue, we return `FALSE`, but if all conditions are met, we return `TRUE`.
 
