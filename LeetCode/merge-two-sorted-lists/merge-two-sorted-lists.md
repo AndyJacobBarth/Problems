@@ -70,7 +70,7 @@ l2 --> (1) --> (3) --> (4)
 
 To clarify, `list1` and `list2` are being used to reference the lists each as a whole, but also to reference the first node of each list. This can be confusing to those not familiar with pointers or how linked lists actually work.
 
-Now, a key thing to note is that `list1` and `list2` point to the head of the linked list, and so if we attempt to iterate through the list using `list1` or `list2`, we no longer have something pointing to the beginning that we can reference to. Similarly, whichever list we have determined to be the start of our `finalList` should not be modified so that we can return this pointer.
+A key thing to note is that `list1` and `list2` point to the head of the linked list, and so if we attempt to iterate through the list using `list1` or `list2`, we no longer have something pointing to the beginning that we can reference to. Similarly, whichever list we have determined to be the start of our `finalList` should not be modified so that we can return this pointer.
 
 So we have the start of our answer being `finalList`. Now, we need to compare `val`'s of `list1` and `list2` to see what our next nodes should be. We know `finalList` is the list whose head is the smallest `val` between the two, but we don't have any way to reference the other list. We have to make yet another pointer for the other list so that we can iterate through it, which I cleverly call `otherList`:
 
