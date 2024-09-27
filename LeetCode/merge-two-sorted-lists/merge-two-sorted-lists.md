@@ -49,15 +49,15 @@ Result: (1) --> (1) --> (2) --> (3) --> (4) --> (4)
 We can achieve the result by doing the following to the two lists:
 
 ```
-list1: (1)   > (2)     (4)
-        |   /   |       ^
-        V  /    V       |
+list1: (1) --> (2)     (4)
+        ^       |       ^
+        |       V       |
 list2: (1)     (3) --> (4)
 ```
 
 Again, forgive my ASCII art, but hopefully the idea is presented here. All we're doing is changing the `next` node for each of the nodes based on order. All we have to do is ask ourselves, "How do we do this?"
 
-The way I approached this is by starting with the list with the smallest `val` for its first node, or head. That is, whatever our intial values are for `list1` and `list2`, I wanted that to be the start of our list. We can call this `finalList`. If `list1`'s `val` is equal to  `list2`'s, we can choose either one. In the actual code I present, I decide to go with `list2` in that event. Here is what it looks like in the test case we analyzed earlier:
+The way I approached this is by starting with the list with the smallest `val` for its first node, or head. That is, whatever our intial values are for `list1` and `list2`, I wanted the smallest `val` of the two to be the start of our list. We can call this `finalList`. If `list1`'s `val` is equal to  `list2`'s, we can choose either one. In the actual code I present, I decide to go with `list2` in that event. Here is what it looks like in the test case we analyzed earlier:
 
 ```
 l1 --> (1) --> (2) --> (4)
