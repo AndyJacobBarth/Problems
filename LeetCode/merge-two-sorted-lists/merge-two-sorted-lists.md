@@ -87,12 +87,8 @@ Where `ol` is the `otherList` pointer. I've removed `l1` and `l2` representing t
 
 Recall that we don't want to use `finalList` as an iterator since we want to reference this when we return our final answer, so we must make yet another linked list node pointer `iter` that can be used to iterate through `finalList`:
 
-That makes $5$ pointers before we've even begun to do anything, so you may think this is overkill. In fact, a slight optimization is to just switch `l1` and `l2` if the head `val` of `l1` $>$ `l2`, and return `l1` at the end (it doesn't matter which list you return, as long as it's the smallest `val`). This would require some third pointer `temp` that will act as a temporary pointer to `l1` so that they can be swapped, and you still need some pointer `iter` to iterate through `l1` since you want to keep `l1` to return. All-in-all, you will have $4$ pointers this way, which isn't much better. I decided to keep my $5$ pointers since I believe the naming convention helps prevent confusion, and there is virtually no performance difference.
-
-Finally on to the problem at hand. The conceptual notion of the implementation is not difficult, but I leave it to the pseudocode to show how this is done by the program. We start with `iter`, which is currently pointing at the first node we want to have in our final list:
-
 ```
- ol
+ol
  V
 (1) --> (2) --> (4)
 (1) --> (3) --> (4)
@@ -100,7 +96,11 @@ Finally on to the problem at hand. The conceptual notion of the implementation i
 fl iter
 ```
 
- If we look ahead to its `next` node, we can see its `val` and compare it to that of the first node in `otherList`. If that value is still less than or equal, we already have it as the `next` to `finalList`, and that's exactly what we want, so we iterate through to the `next` node and repeat the process. We can continue to do so until finally the `val` for `iter`'s `next` node is greater than `otherList`'s:
+That makes $5$ pointers before we've even begun to do anything, so you may think this is overkill. In fact, a slight optimization is to just switch `l1` and `l2` if the head `val` of `l1` $>$ `l2`, and return `l1` at the end (it doesn't matter which list you return, as long as it's the smallest `val`). This would require some third pointer `temp` that will act as a temporary pointer to `l1` so that they can be swapped, and you still need some pointer `iter` to iterate through `l1` since you want to keep `l1` to return. All-in-all, you will have $4$ pointers this way, which isn't much better. I decided to keep my $5$ pointers since I believe the naming convention helps prevent confusion, and there is virtually no performance difference.
+
+Finally on to the problem at hand. The conceptual notion of the implementation is not difficult, but I leave it to the pseudocode to show how this is done by the program. We start with `iter`, which is currently pointing at the first node we want to have in our final list.
+
+If we look ahead to its `next` node, we can see its `val` and compare it to that of the first node in `otherList`. If that value is still less than or equal, we already have it as the `next` to `finalList`, and that's exactly what we want, so we iterate through to the `next` node and repeat the process. We can continue to do so until finally the `val` for `iter`'s `next` node is greater than `otherList`'s:
  
  ```
  ol
@@ -276,6 +276,7 @@ What are some other approaches to this problem? I have seen solutions where they
 ## Pseudo Code
 ```
 INPUT list1, list2
+
 IF list1 == NULL:
     PRINT list2
     RETURN
@@ -283,6 +284,7 @@ IF list2 == NULL:
     PRINT list1
     RETURN
 
+# Defining finalList and otherList
 IF list1->val < list2->val:
     finalList = list1
 ELSE:
@@ -296,18 +298,22 @@ ELSE:
 iter = finalList
 
 WHILE iter != NULL AND otherList != NULL:
+    # Keep adding nodes until other list's node has a smaller value
     WHILE iter->next != NULL AND iter->next->val <= otherList->val:
         iter = iter->next
-    
+
+    # If we reach the end of the line, point to the remainder of the other list
     IF iter->next == NULL:
         iter->next = otherList
         PRINT finalList
         RETURN
-    
+
+    # Point to the node on the other list, holding on to the next node of the current list
     temp = iter->next
     iter->next = otherList
     iter = temp
 
+    # Literally repeat the entire process with the other list
     WHILE otherList->next != NULL AND otherList->next->val <= iter->val:
         otherList = otherList->next
 
