@@ -88,7 +88,7 @@ Where `ol` is the `otherList` pointer. I've removed `l1` and `l2` representing t
 Recall that we don't want to use `finalList` as an iterator since we want to reference this when we return our final answer, so we must make yet another linked list node pointer `iter` that can be used to iterate through `finalList`:
 
 ```
-ol
+ ol
  V
 (1) --> (2) --> (4)
 (1) --> (3) --> (4)
