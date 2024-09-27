@@ -4,6 +4,10 @@ This problem gives us two integers $a, b$ requiring them to be sorted in ascendi
 
 We can simply compare the two numbers. If $a < b$, we can output them in the order given. Otherwise we can output them in the order `b a`.
 
+It should be noted that $a, b \leq 10^6$, so at least $32$-bit signed integers should be used, since
+
+$\max 32 \textunderscore signed \textunderscore int \textunderscore max = 2^{31}-1 > 2 \times 10^9 > 10^6 > 3 \times 10^4 \approx \max 16 \textunderscore signed \textunderscore int \textunderscore max$
+
 ## Pseudo Code
 ```
 INPUT a, b
