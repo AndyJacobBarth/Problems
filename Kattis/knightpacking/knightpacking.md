@@ -11,7 +11,7 @@ As the problem is stated, there is not enough information given. Let's see why b
 |  | --> |♞|
 +--+     +--+
 ```
-Here, a `.` represents an empty spot and `x` represents a knight. For this $1 \times 1$ setup, it's clear only one knight can be placed, and therefore player one wins.
+Forgive the ASCII art, there's plenty more to come. For this $1 \times 1$ setup, it's clear only one knight can be placed, and therefore player one wins.
 ```
 +--+--+     +--+--+  
 |  |  |     |♞|♞|
