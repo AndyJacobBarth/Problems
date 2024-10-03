@@ -12,14 +12,17 @@ The constraints suggest that $\max y = 9999$, which maintains that $y \sim 10^3$
 
 $10^3 < 3 \times 10^4 \approx 2^{15}-1 = 16 \textunderscore signed \textunderscore int \textunderscore max$
 
-It is also suggested that $y \ge 2020$, so we do not have to be careful for cases where $y$ represents a time before then.
+It is also suggested that $y \ge 2020$, but I have ran into errors with my code despite this. Instead, we need to add a conditional that the price at and before $2020$ is $1000$.
 
 ## Pseudo Code
 ```
 INPUT y
 
-PRINT 1000 + 100*(y - 2020)
+IF y <= 2020:
+    PRINT 1000
+ELSE:
+    PRINT 1000 + 100*(y - 2020)
 ```
 
 ## Time Complexity
-We are only doing a fixed amount of arithmetic and read/print operations, so the time complexity is exactly $O(1) = \Omega(1) = \Theta(1)$.
+We are only doing a fixed amount of arithmetic and read/print operations under a conditional, so the time complexity is exactly $O(1) = \Omega(1) = \Theta(1)$.
