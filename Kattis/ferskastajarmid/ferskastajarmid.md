@@ -42,4 +42,4 @@ PRINT memes[0][0]
 ```
 
 ## Time Complexity
-We loop through $n$ memes, which is $O(n)$ time. We then sort the memes, first by their integer part, then by their string part. Assuming the string length is not significant, this becomes $O(n \log n)$. Therefore the total complexity of this algorithm is $O(n \log n)$.
+We loop through $n$ memes, which is $O(n)$ time. We then sort the memes, first by their integer part, then by their string part. Assuming the string length is not significant, this becomes $O(n \log n)$. Therefore the total complexity of this algorithm is $O(n \log n)$. Note that sorting twice is still $O(n \log n)$, and we can assume the best case for the sorting algorithm is equivalent, meaning the program overall also has complexity $\Omega(n \log n) = \Theta(n \log n)$.
