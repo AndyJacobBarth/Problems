@@ -91,4 +91,8 @@ $\log 1 + \log 2 + ... + \log n = \log (\prod_{i = 1}^ni) = \log (n!)$
 
 The best case would therefore be $\Omega(\log (n!))$ for the full search. [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation) estimates this to be roughly $\Omega(n \log n)$. Combined this with the complexity of the read input, and the best-case complexity of the program becomes $\Omega(n \log n + m)$.
 
-All this analysis shows that sorting in the worst and best-case scenario is better than without doing so.
+All this analysis shows that sorting in the worst and best-case scenario is better than without doing so:
+
+$O(n \log m) < O(n \times m)$
+
+$\Omega(n \log n + m) < \Omega(n^2 + m)$
