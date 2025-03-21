@@ -1,3 +1,5 @@
+# Scan Surprise
+
 This challenge has a .png file. Opening it reveals a QR code.
 
 We can scan the QR code several ways, the most popular by phone. An alternative is using a website. At the time of this writing, I was able to find https://qrscanner.net/. Uploading the image there reveals the flag.
